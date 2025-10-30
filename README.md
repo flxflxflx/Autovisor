@@ -94,7 +94,7 @@ Github: [Releases · CXRunfree/Autovisor (github.com)](https://github.com/CXRunf
 
 4.我想自定义要启动的浏览器, 但是找不到装在哪里? 
 
-- 打开你的浏览器, 在地址栏中输入 Chrome://version 回车之后, 如图的"可执行文件目录" 就是浏览器安装目录了。
+- 打开浏览器, 在地址栏中输入 Chrome://version 回车之后, 如图的"可执行文件目录" 就是浏览器安装目录了。
 
   
   
