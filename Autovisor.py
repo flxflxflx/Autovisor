@@ -6,7 +6,11 @@ import traceback
 import sys
 from playwright.async_api import async_playwright, Playwright, Page, BrowserContext
 from playwright.async_api import TimeoutError
-from playwright._impl._errors import TargetClosedError
+try:
+    from playwright.async_api import TargetClosedError
+except ImportError:
+    # 兼容旧版 Playwright
+    from playwright._impl._errors import TargetClosedError
 from modules.logger import Logger
 from modules.configs import Config
 from modules.progress import get_course_progress, show_course_progress
